@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Crea una página web que permita a los usuarios buscar y guardar sus Pokémon favoritos
+utilizando la PokeAPI.
+La página debe tener las siguientes funcionalidades:
+1. Un campo de entrada de texto donde los usuarios puedan ingresar el nombre o el número de un Pokémon.
+2. Un botón "Buscar" que, al hacer clic, consulte la PokeAPI para obtener información sobre el Pokémon ingresado y muestre su nombre
+y una imagen en la página.
+3. Un botón "Agregar a Favoritos" que permita a los usuarios agregar el Pokémon mostrado a una lista de favoritos.
+4. Una lista de favoritos que muestre los Pokémon agregados por el usuario. Los Pokémon favoritos deben persistir en el localStorage del
+navegador.
+5. Cada Pokémon en la lista de favoritos debe tener un botón "Eliminar" que permita al usuario eliminar un Pokémon de la lista de
+favoritos y del localStorage.
+6. Utiliza Fetch para obtener información de la PokeAPI y asegúrate de manejar errores, como Pokémon no encontrados. -->
+
+<header>
+    <h1>Prueba Carlos Trujillo</h1>
+</header>
+
+
+<main>
+    <section>
+        <input type="text" id="pokemonInput" placeholder="Nombre Pokemon">
+        <button id="searchButton">Buscar</button>
+    </section>
+
+    <article id="pokemonInfo">
+        <!-- Para mostrar información -->
+    </article>
+
+    <section>
+        <button id="addToFavorites"></button>
+    </section>
+
+    <section>
+        <h2>Favoritos</h2>
+        <ul id="favoritesList">
+            <!-- Mostrar favoritos -->
+        </ul>
+    </section>
+</main>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
